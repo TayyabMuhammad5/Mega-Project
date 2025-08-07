@@ -1,0 +1,54 @@
+<% layout("layout/boilerplate") %>
+<body>
+    <br><br>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <form action="/listings" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+    
+     <div class="mb-3">
+     <label for="title" class="form-label">Title</label>   
+    <input name="title" placeholder="Enter title" class="form-control" required>
+    <div class="invalid-feedback">Enter a valid title</div>
+    </div>
+     <div class="row">
+        <div class="mb-3 col-md-4">
+   <label for="price" class="form-label">Price</label>      
+    <input name="price" placeholder="Enter price"  class="form-control" required>
+    <div class="invalid-feedback">Enter a valid price</div>
+    </div>
+
+     <div class="mb-3 col-md-8">
+     <label for="country" class="form-label">Country</label>  
+    <input name="country" placeholder="Enter country" class="form-control" required>
+    <div class="invalid-feedback">Enter a valid country</div>
+    </div>
+     </div>
+   
+
+     <div class="mb-3">
+    <label for="location" class="form-label">Location</label>  
+    <input name="location" placeholder="Enter location" class="form-control" required>
+    <div class="invalid-feedback">Enter a valid location</div>
+    </div>
+
+   
+    
+    <div class="mb-3">
+     <label for="image" class="form-label">Upload image</label>  
+    <input name="image" placeholder="Upload image" class="form-control" type="file" required>
+    </div>
+
+   
+
+    <div class="mb-3">
+    <label for="description" class="form-label">Description</label>  
+    <textarea name="description" placeholder="Enter description" class="form-control" required></textarea >
+        <div class="invalid-feedback">Enter a short description</div>
+    </div>
+
+    <button class="btn btn-dark add-btn">Submit</button>
+    </form>
+    </div>
+    </div>
+    <br>
+</body>
